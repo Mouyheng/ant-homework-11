@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        .nav-link {
+            padding: 15px 25px !important;
+        }
+
+        .btn-orange {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 8px;
+        }
+
+        .sub-banner .item:hover {
+            border: 5px solid black;
+            overflow: hidden;
+        }
+
+        .sub-banner .item:hover img {
+            transform: scale(1.1);
+        }
+
+        .product .item img {
+            height: 200px;
+        }
+
+        .text-orange {
+            color: orange;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light p-0">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link bg-secondary bg-opacity-25 text-dark" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="bi bi-basket"></i> My cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner position-relative" style="height: 400px;">
+        <img src="img/light_bulb.jpg" alt="" class="h-100 w-100 position-absolute">
+        <div class="container">
+            <div class="banner-content position-absolute h-100 d-flex flex-column justify-content-center text-white">
+                <h1><i class="bi bi-building"></i> Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, ab?</p>
+                <button class=" btn-orange" style="width: 100px;">More</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="w-100 text-center my-4">
+            <h2 style="color: orange;">Lorem, ipsum dolor sit amet consectetur</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, repellat obcaecati. Aut molestiae cumque
+                dignissimos minus sit, iure quibusdam magni impedit ratione excepturi quia architecto? Libero
+                repudiandae tempore atque iste tenetur suscipit magnam ea, autem perspiciatis dolor, omnis fugit! Earum
+                enim nostrum corrupti facere atque ullam veniam fuga officiis rem.</p>
+        </div>
+    </div>
+    <div class="container-fluid sub-banner">
+        <div class="row" style="height: 250px;">
+            <div class="col-4 item p-0 h-100 position-relative">
+                <img src="img/grapes.jpg" alt="" class="h-100 w-100 position-absolute">
+                <p class="h3 position-absolute top-50 start-50 translate-middle text-white text-capitalize">Lorem ipsum
+                    amet.</p>
+            </div>
+            <div class="col-4 item p-0 h-100 position-relative">
+                <img src="img/coffee_beans_1.jpg" alt="" class="h-100 w-100 position-absolute">
+                <p class="h3 position-absolute top-50 start-50 translate-middle text-white text-capitalize">Lorem ipsum
+                    amet.</p>
+            </div>
+            <div class="col-4 item p-0 h-100 position-relative">
+                <img src="img/pepper.jpg" alt="" class="h-100 w-100 position-absolute">
+                <p class="h3 position-absolute top-50 start-50 translate-middle text-white text-capitalize">Lorem ipsum
+                    amet.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container product my-4 ">
+        <h2 class="text-center text-orange ">World Class Product</h2>
+        <div class="row ">
+            <div class="col-lg-3 ">
+                <div class="item border p-3 mb-3 mb-lg-0">
+                    <img src="img/coffee_beans_1.jpg" alt="" class="w-100 mt-1">
+                    <p class="h5 my-4 text-orange">Lorem ipsum .</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aut explicabo quis aperiam atque
+                        saepe officia nihil beatae nemo doloribus.</p>
+                    <p class="text-orange my-3">$10.20</p>
+                    <form class="position-relative" style="height: 40px;">
+                        <input type="text" class="rounded-start position-absolute h-100 border ps-3" placeholder="1">
+                        <button class="border-0 rounded-end position-absolute text-white h-100"
+                            style="right: 0px;background-color: orange; width: 130px;"><i class="bi bi-basket"></i> Add to card
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 ">
+                <div class="item border p-3 mb-3 mb-lg-0">
+                    <img src="img/jars.jpg " alt="" class="w-100 mt-1">
+                    <p class="h5 my-4 text-orange">Lorem ipsum .</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aut explicabo quis aperiam atque
+                        saepe officia nihil beatae nemo doloribus.</p>
+                    <p class="text-orange my-3">$10.20</p>
+                    <form class="position-relative" style="height: 40px;">
+                        <input type="text" class="rounded-start position-absolute h-100 border ps-3" placeholder="1">
+                        <button class="border-0 rounded-end position-absolute text-white h-100"
+                            style="right: 0px;background-color: orange; width: 130px;"><i class="bi bi-basket"></i> Add to card
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 ">
+                <div class="item border p-3 mb-3 mb-lg-0">
+                    <img src="img/mung_beans.jpg" alt="" class="w-100 mt-1">
+                    <p class="h5 my-4 text-orange">Lorem ipsum .</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aut explicabo quis aperiam atque
+                        saepe officia nihil beatae nemo doloribus.</p>
+                    <p class="text-orange my-3">$10.20</p>
+                    <form class="position-relative" style="height: 40px;">
+                        <input type="text" class="rounded-start position-absolute h-100 border ps-3" placeholder="1">
+                        <button class="border-0 rounded-end position-absolute text-white h-100"
+                            style="right: 0px;background-color: orange; width: 130px;"><i class="bi bi-basket"></i> Add to card
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 ">
+                <div class="item border p-3">
+                    <img src="img/grapes.jpg" alt="" class="w-100 mt-1">
+                    <p class="h5 my-4 text-orange">Lorem ipsum .</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel aut explicabo quis aperiam atque
+                        saepe officia nihil beatae nemo doloribus.</p>
+                    <p class="text-orange my-3">$10.20</p>
+                    <form class="position-relative" style="height: 40px;">
+                        <input type="text" class="rounded-start position-absolute h-100 border ps-3" placeholder="1">
+                        <button class="border-0 rounded-end position-absolute text-white h-100"
+                            style="right: 0px;background-color: orange; width: 130px;"> <i class="bi bi-basket"></i> Add to card
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container text-center">
+        <h2 class="text-orange">Unparalleled Service</h2>
+        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci alias
+            distinctio voluptatum fuga eaque voluptatem fugit eum, nesciunt quidem, quos vitae? Quam tempora ut impedit
+            architecto, harum quas ea odio saepe! Laudantium deleniti, nobis commodi id modi voluptates, beatae ab,
+            assumenda saepe enim architecto dolore est illum sequi! Temporibus, doloremque? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Laboriosam, doloremque.
+        </p>
+        <img src="img/service.jpg" alt="" class="rounded-circle w-25">
+        <h2 class="text-orange my-3">Find Us</h2>
+    </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62523.6476721347!2d104.90095128598593!3d11.642722784427656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e0c9b2109%3A0x8b8d35d80b920ffc!2sANT%20Technology%20Training%20School!5e0!3m2!1sen!2skh!4v1660060343860!5m2!1sen!2skh"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="container contact text-center">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, voluptatibus.</p>
+        <h2 class="text-orange">Contact Us</h2>
+        <p class="mb-0"><i class="bi bi-telephone-fill"></i> +(855) 23 880 880</p>
+        <p>info@example.com</p>
+    </div>
+    <div class=" bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-lg-4 ">
+                    <nav class="navbar">
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item mb-3">
+                                <a class=" text-dark h4 text-decoration-none" aria-current="page"
+                                    href="#">Information</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class=" text-secondary text-decoration-none" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="text-secondary text-decoration-none" aria-current="page" href="#">Customer</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="text-secondary text-decoration-none" aria-current="page" href="#">Privacy</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="text-secondary text-decoration-none" aria-current="page" href="#">Sitemap</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4 ">
+                    <nav class="navbar">
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item mb-3">
+                                <a class=" text-dark h4 text-decoration-none" aria-current="page" href="#">My
+                                    account</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class=" text-secondary text-decoration-none" href="#">Sign Up </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="text-secondary text-decoration-none" aria-current="page" href="#">View
+                                    Cart</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="text-secondary text-decoration-none" aria-current="page" href="#">My
+                                    Wishlist</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="text-secondary text-decoration-none" aria-current="page" href="#">Track My
+                                    order</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4 ">
+                    <nav class="navbar">
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item mb-3">
+                                <a class=" text-dark h4 text-decoration-none" aria-current="page"
+                                    href="#"><i class="bi bi-newspaper"></i> Newsletter</a>
+                            </li>
+                            <p class="text-secondary mb-2">Lorem ipsum dolor sit amet con</p>
+                            <form style="height: 40px;" class="position-relative">
+                                <input type="text" class="rounded-start  h-100 border ps-3"
+                                    placeholder="Enter your email address">
+                                <button class="border-0 rounded-end  text-white h-100 position-absolute"
+                                    style="width: 130px;background-color: orange;">Add to card
+                                </button>
+                            </form>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-column align-items-center p-3">
+            <div class="d-flex">
+                <p class="text-orange mb-0">Term & Condition</p>
+                <p class="text-orange mb-0 mx-1"> | </p>
+                <p class="text-orange mb-0">Policy</p>
+                <p class="text-orange mb-0 mx-1"> | </p>
+                <p class="text-orange mb-0">Contact</p>
+            </div>
+            <small class="text-secondary mt-2">CopyRight@ Example.com 2022</small>
+
+        </div>
+    </div>
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
